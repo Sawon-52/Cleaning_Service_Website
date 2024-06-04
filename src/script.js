@@ -14,3 +14,38 @@ function darkModeToggle() {
 
 // darkModeToggle();
 
+//Animation for menubar toggeing
+function menubarToggleing() {
+  var tl = gsap.timeline();
+  tl.to("#mobileNav", {
+    left: 0,
+    duration: 1,
+  });
+  tl.from("#items li", {
+    opacity: 0,
+    x: 150,
+    duration: 0.4,
+    stagger: 0.3,
+  });
+  tl.pause();
+
+  const menuIcon = document.getElementById("menu");
+  menuIcon.addEventListener("click", () => {
+    tl.play();
+  });
+
+  const close = document.getElementById("close");
+  close.addEventListener("click", () => {
+    tl.reverse();
+  });
+}
+menubarToggleing();
+
+function headerAnimation() {
+  var tl = gsap.timeline();
+  tl.from("#navber", {
+    x: -100,
+    duration: 1,
+  });
+}
+headerAnimation();

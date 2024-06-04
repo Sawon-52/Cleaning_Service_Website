@@ -8,10 +8,11 @@
     <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet" />
   </head>
   <body>
-    <header class="min-h-[600px] w-full bg-gradient-to-tl from-blue-300">
-      <nav class="flex justify-between w-[70%] mx-auto py-5 items-center mb-20">
-        <div class="text-2xl font-bold">Clino</div>
-        <div>
+    <header class="min-h-[600px] w-full bg-gradient-to-tl from-blue-300 overflow-x-hidden">
+      <nav class="w-[90%] lg:w-[70%] flex justify-between mx-auto py-5 items-center mb-9 lg:mb-20" id="navber">
+        <div class="text-2xl font-bold nav-items">Clino</div>
+
+        <div class="nav-items hidden md:block">
           <ul class="flex gap-5 text-base font-semibold">
             <li class="text-blue-400"><a href="#">Home</a></li>
             <li><a href="#">About</a></li>
@@ -21,26 +22,51 @@
           </ul>
         </div>
 
-        <div class="flex gap-3 items-center">
-          <div>
-            <i class="ri-search-line bg-slate-900 rounded-full p-3 text-white text-base"></i>
-          </div>
+        <div class="nav-items hidden md:block">
+          <div class="flex gap-3 items-center">
+            <div class="md:hidden lg:block">
+              <div class="bg-gray-900 text-gray-200 rounded-full w-11 h-11 flex items-center justify-center">
+                <i class="ri-search-line text-base"></i>
+              </div>
+            </div>
 
-          <div class="bg-blue-400 rounded-3xl p-2 px-4">
-            <a href="#" class="text-base text-white font-semibold">Contact us </a>
+            <div class="bg-blue-400 rounded-3xl p-2 px-4 nav-items">
+              <a href="#" class="text-base text-white font-semibold">Contact us </a>
+            </div>
           </div>
+        </div>
+
+        <div class="block md:hidden" id="menu">
+          <i class="ri-menu-3-line text-xl"></i>
+        </div>
+      </nav>
+
+      <!--mobile navber -->
+      <nav class="w-full min-h-screen flex gap-10 justify-between mx-auto py-5 px-5 backdrop-blur-xl bg-blue-400/50 absolute top-0 -left-[100%] md:hidden z-50" id="mobileNav">
+        <div class="my-10">
+          <ul class="flex flex-col gap-5 text-2xl font-semibold" id="items">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Testimonial</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+
+        <div class="bg-gray-900 text-gray-200 rounded-full w-11 h-11 flex items-center justify-center" id="close">
+          <i class="ri-close-line"></i>
         </div>
       </nav>
 
       <!--Banner-->
-      <div class="w-[70%] h-full mx-auto flex gap-10 justify-between items-stretch">
-        <div class="md:w-[70%] py-12">
+      <div class="w-[90%] lg:w-[70%] h-full mx-auto flex flex-col lg:flex-row justify-between items-stretch gap-10">
+        <div class="md:w-[70%] lg:py-12">
           <div class="w-32 flex justify-center">
             <h2 class="bg-blue-200 text-blue-400 p-2 px-4 rounded-md text-base font-semibold">We Are Clino</h2>
           </div>
 
           <div class="mt-3">
-            <h1 class="font-bold text-4xl">
+            <h1 class="font-bold text-2xl md:text-3xl lg:text-4xl">
               Feel Your Way For <br />
               Freshness
             </h1>
@@ -72,7 +98,7 @@
                 <h2 class="text-sm font-bold text-gray-50">+44</h2>
               </div>
 
-              <div class="absolute left-44 w-28">
+              <div class="absolute left-40 md:left-44 w-28">
                 <p class="text-sm font-semibold text-gray-900">Our Vip clients</p>
               </div>
             </div>
@@ -90,11 +116,13 @@
           </div>
         </div>
 
-        <div class="md:w-full self-end">
+        <div class="md:w-full lg:self-end my-10 lg:my-0">
           <img src="./Assets/banner.png" class="object-containe object-center" alt="Yound Man cleaner" />
         </div>
       </div>
     </header>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
   </body>
 </html>
