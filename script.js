@@ -44,14 +44,45 @@ menubarToggleing();
 function headerAnimation() {
   var tl = gsap.timeline();
   tl.from("#navber", {
-    x: -100,
-    duration: 1,
+    x: -200,
+    duration: 1.5,
   });
 }
 headerAnimation();
 
-function Animation(){
-  const tl = 
+function bannerAnimation() {
+  // var tl = gsap.timeline();
+  // gsap.from("#banner_left", {
+  //   x: -100,
+  //   duration: 1,
+  // });
 
+  gsap.from("#banner_right", {
+    opacity: 0,
+    x: 300,
+    duration: 1.5,
+  });
 }
-Animation()
+bannerAnimation();
+
+function qualityService() {
+  var tl = gsap.timeline();
+  tl.from("#Quality_service .quality_item", {
+    opacity: 0,
+    x: 200,
+    duration: 1,
+    stagger: {
+      each: 0.3,
+      from: "start",
+    },
+    // scrollTrigger: {
+    //   trigger: ".quality_item ",
+    //   scroller: "body",
+    //   markers: true,
+    //   start: "top 75%",
+    //   end: "top 10%",
+    //   scrub: true,
+    // },
+  });
+}
+qualityService();

@@ -64,7 +64,7 @@
 
       <!--Banner-->
       <div class="w-[90%] lg:w-[70%] xl:w-[63%] h-auto mx-auto flex flex-col lg:flex-row justify-between items-stretch gap-10">
-        <div class="md:w-[70%] lg:py-16">
+        <div class="md:w-[70%] lg:py-16" id="banner_left">
           <div class="w-32 flex justify-center">
             <h2 class="bg-blue-200 text-blue-400 p-2 px-4 rounded-md text-base font-semibold">We Are Clino</h2>
           </div>
@@ -120,25 +120,25 @@
           </div>
         </div>
 
-        <div class="md:w-full h-full self-end mt-5 lg:my-0">
+        <div class="md:w-full h-full self-end mt-5 lg:my-0" id="banner_right">
           <img src="./Assets/banner.png" class="object-containe object-center" alt="Young Man cleaner" />
         </div>
       </div>
     </header>
 
     <!--Quality of service card-->
-    <section class="w-[90%] lg:w-[70%] xl:w-[63%] min-h-20 mx-auto flex flex-col md:flex-row lg:flex-row gap-5 justify-between relative -top-10">
-      <div class="w-full md:max-w-96 rounded-xl p-3 drop-shadow-sm bg-gray-50/90 shadow-2xl shadow-gray-500/30">
+    <section class="w-[90%] lg:w-[70%] xl:w-[63%] min-h-20 mx-auto flex flex-col md:flex-row lg:flex-row gap-5 justify-between relative -top-10" id="Quality_service">
+      <div class="w-full md:max-w-96 rounded-xl bg-gray-50 p-3 drop-shadow-sm bg-gray-50/90 shadow-2xl shadow-gray-500/30 quality_item">
         <i class="ri-team-fill text-blue-400 text-4xl"></i>
         <h2 class="text-md font-bold my-2 text-gray-900">Expert Team</h2>
         <p class="text-sm font-semibold text-gray-400">Our highly trained professionals bring a weather of experience</p>
       </div>
-      <div class="w-full md:max-w-96 rounded-xl bg-gray-50 p-3 drop-shadow-sm bg-gray-50/90 shadow-2xl shadow-gray-500/30">
+      <div class="w-full md:max-w-96 rounded-xl bg-gray-50 p-3 drop-shadow-sm bg-gray-50/90 shadow-2xl shadow-gray-500/30 quality_item">
         <i class="ri-service-fill text-blue-400 text-4xl"></i>
         <h2 class="text-md font-bold my-2 text-gray-900">Quality Services</h2>
         <p class="text-sm font-semibold text-gray-400">we guarantee a spoties finish that exceeds your expetations</p>
       </div>
-      <div class="w-full md:max-w-96 rounded-xl bg-gray-50 p-3 drop-shadow-sm bg-gray-50/90 shadow-2xl shadow-gray-500/30">
+      <div class="w-full md:max-w-96 rounded-xl bg-gray-50 p-3 drop-shadow-sm bg-gray-50/90 shadow-2xl shadow-gray-500/30 quality_item">
         <i class="ri-price-tag-3-line text-blue-400 text-4xl"></i>
         <h2 class="text-md font-bold my-2 text-gray-900">Affordable price</h2>
         <p class="text-sm font-semibold text-gray-400">we offers exceptional services at prices that afforfable for everyone</p>
@@ -548,6 +548,7 @@
     </footer>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js" integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
