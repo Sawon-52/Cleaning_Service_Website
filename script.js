@@ -49,3 +49,9 @@ function headerAnimation() {
   });
 }
 headerAnimation();
+
+function Animation(){
+  const tl = 
+
+}
+Animation()
